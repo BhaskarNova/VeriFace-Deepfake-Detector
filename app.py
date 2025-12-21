@@ -17,25 +17,45 @@ st.set_page_config(
 # --- CUSTOM CSS (For that "Cyber" look) ---
 st.markdown("""
     <style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+    /* Apply Font to Titles */
+    h1, h2, h3 {
+        font-family: 'Orbitron', sans-serif;
+        color: #00ADB5 !important;
+        text-shadow: 0 0 10px #00ADB5;
+    }
+
+    /* Main Background */
     .stApp {
         background-color: #0E1117;
-        color: #FAFAFA;
     }
+
+    /* Cool Glowing Buttons */
     .stButton>button {
-        background-color: #00ADB5;
+        background: linear-gradient(45deg, #00ADB5, #007980);
         color: white;
-        border-radius: 10px;
+        border: none;
+        border-radius: 8px;
         height: 50px;
         width: 100%;
+        font-family: 'Orbitron', sans-serif;
         font-weight: bold;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 173, 181, 0.5);
     }
-    .stProgress > div > div > div > div {
-        background-color: #00ADB5;
+    
+    .stButton>button:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(0, 173, 181, 0.8);
     }
-    h1 {
-        text-align: center; 
-        color: #00ADB5;
-    }
+
+    /* Hide Streamlit Default Menus (Cleaner Look) */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    
     </style>
     """, unsafe_allow_html=True)
 
