@@ -11,7 +11,7 @@
 
 ## 🚀 Live Demo
 Check out the live application running on the cloud:
-**[👉 Click Here to Launch VeriFace](https://veriface-deepfake-detector-bytu9pjp7jbzs5jrn4xidq.streamlit.app/)**
+**[👉 Click Here to Launch VeriFace](https://veriface-deepfake-detector-47cburzpg4syaf8vmbfllw.streamlit.app/)**
 
 ---
 
@@ -30,7 +30,13 @@ With the rise of Generative AI, creating hyper-realistic fake videos ("Deepfakes
 
 ## 📸 Screenshots
 *(Optional: Upload your screenshots to an 'assets' folder and link them here)*
-![App Interface](https://via.placeholder.com/800x400?text=VeriFace+Interface+Preview)
+## 📸 Screenshots
+
+### 🖥️ Professional Dashboard
+![Dashboard](screenshots/home.png)
+
+### 🕵️‍♂️ Detection in Action
+![Analysis Result](screenshots/result.png)
 
 ---
 
