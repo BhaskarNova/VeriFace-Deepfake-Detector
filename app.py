@@ -15,6 +15,7 @@ st.set_page_config(
 )
 
 # --- CUSTOM CSS (For that "Cyber" look) ---
+# --- CUSTOM CSS (For that "Cyber" look) ---
 st.markdown("""
     <style>
     /* Import Google Font */
@@ -24,12 +25,25 @@ st.markdown("""
     h1, h2, h3 {
         font-family: 'Orbitron', sans-serif;
         color: #00ADB5 !important;
-        text-shadow: 0 0 10px #00ADB5;
+        text-shadow: 0 0 10px rgba(0, 173, 181, 0.3);
     }
 
-    /* Main Background */
+    /* --- THE NEW COOL BACKGROUND --- */
     .stApp {
+        /* Base dark color */
         background-color: #0E1117;
+        
+        /* 1. Subtle Radial Gradient spotlight in the center */
+        background-image: radial-gradient(circle at center, rgba(0, 173, 181, 0.1) 0%, rgba(0,0,0,0) 70%);
+        
+        /* 2. Subtle "Digital Grid" Pattern overlay */
+        background-size: 50px 50px;
+        background-image: 
+            linear-gradient(to right, rgba(0, 173, 181, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 173, 181, 0.05) 1px, transparent 1px);
+            
+        /* Keeps background fixed while scrolling */
+        background-attachment: fixed;
     }
 
     /* Cool Glowing Buttons */
@@ -42,13 +56,21 @@ st.markdown("""
         width: 100%;
         font-family: 'Orbitron', sans-serif;
         font-weight: bold;
+        letter-spacing: 1px;
         transition: all 0.3s ease;
         box-shadow: 0 0 10px rgba(0, 173, 181, 0.5);
     }
     
     .stButton>button:hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 20px rgba(0, 173, 181, 0.8);
+        transform: scale(1.02) translateY(-2px);
+        box-shadow: 0 0 20px rgba(0, 173, 181, 0.8), 0 0 30px rgba(0, 173, 181, 0.4);
+    }
+
+    /* Make the sidebar slightly translucent */
+    [data-testid="stSidebar"] {
+        background-color: rgba(14, 17, 23, 0.9) !important;
+        backdrop-filter: blur(10px);
+        border-right: 1px solid rgba(0, 173, 181, 0.2);
     }
 
     /* Hide Streamlit Default Menus (Cleaner Look) */
