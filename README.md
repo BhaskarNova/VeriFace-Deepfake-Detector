@@ -30,7 +30,6 @@ With the rise of Generative AI, creating hyper-realistic fake videos ("Deepfakes
 
 ## 📸 Screenshots
 *(Optional: Upload your screenshots to an 'assets' folder and link them here)*
-## 📸 Screenshots
 
 ### 🖥️ Professional Dashboard
 ![Dashboard](screenshots/home.png)
