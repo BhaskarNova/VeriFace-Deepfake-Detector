@@ -76,6 +76,7 @@ st.markdown("""
     /* Hide Streamlit Default Menus (Cleaner Look) */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
+    header {visibility: hidden;}
     
     </style>
     """, unsafe_allow_html=True)
@@ -89,7 +90,7 @@ with st.sidebar:
     st.info("💡 **Tip:** Upload a clear video where the face is visible.")
     
     st.markdown("---")
-    st.caption("Developed by BhaskarNova")
+    st.caption("Developed by Cyber_Syndicate group")
     st.caption("VeriFace v1.0")
 
 # --- MAIN HEADER ---
